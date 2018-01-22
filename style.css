@@ -1,0 +1,45 @@
+/* CSS */
+
+body {
+	background-image: url('floresta.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;	
+	margin-top: 25%;
+
+}
+
+.bordaint {
+	border: 1px solid white;
+	width: 300px;
+	padding: 10px;
+	margin: 0 auto;
+}
+
+.conteudo {
+	width: 295px;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+}
+
+.btn {
+	border: 1px solid #fff;
+	padding: 30px;
+	color: #000;
+	margin: 1px;
+	width: 68.42px;
+}
+
+.btn:hover {
+	background-color: transparent;
+	color: #fff;
+	border: 1px solid #ccc;
+}
+
+#display {
+	width: 276.68px;
+	height: 30px;
+	border: 3px solid black;
+	margin-bottom: 5px;
+	text-align: right;
+}

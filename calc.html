@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculadora Sombria</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script>
+		var operador1, operador2, operacao, estado;
+		var disp;
+
+		function reset(){
+			operador1 = '0';
+			operador2 = '0';
+			operacao = null;
+			estado = 1;
+			disp.value = '0';
+		}
+
+		function myFunction(objeto){
+			var me = objeto.value;
+
+			if(me == 'AC'){
+				reset();
+				return;
+			}
+
+			if(me == '='){
+				var res;
+
+				switch(operacao){
+
+					case '+':
+						res = parseFloat(operador1) + parseFloat(operador2);
+						break;
+					case '-':
+						res = parseFloat(operador1) - parseFloat(operador2);
+						break;
+					case '/':
+						res = parseFloat(operador1) / parseFloat(operador2);
+						break;	
+					case '*':
+						res = parseFloat(operador1) * parseFloat(operador2);
+						break;				
+				}
+
+				disp.value = res.toString();
+				console.log(res);
+				estado = 1;
+				return;
+			}
+
+			if((me == '+') || (me == '-') || (me == '/') || (me == '*')){
+				operacao = me;
+				estado = 2;
+				return;
+			}
+
+			if((me == '.') || (me >= '0') || (me <= '9')){
+				if(estado == 1){
+					operador1 += me;
+					disp.value = parseFloat(operador1).toString();
+				}
+				else if(estado == 2){
+					operador2 += me;
+					disp.value = parseFloat(operador2).toString();
+				}
+			}
+
+		}
+
+
+
+		function inicializa_pagina (){
+			disp = document.getElementById('display');
+			reset();
+			
+		}
+		
+		
+		
+		
+	</script>
+</head>
+
+<!-- html -->
+<body onload="inicializa_pagina();">
+	<div id="calc">
+
+
+
+				<div class="bordaint">
+					<div class="conteudo">
+
+						<form>
+
+							<input id="display" type="text" value="0" />
+
+							<input type="button" id="bt7" class="btn" value="7" onclick="myFunction(this)"/>
+
+							<input type="button" id="bt8" class="btn" value="8" onclick="myFunction(this)"/>
+
+							<input type="button" id="bt9" class="btn" value="9" onclick="myFunction(this)"/>
+
+							<input type="button" id="bt+" class="btn" value="+" onclick="myFunction(this)"/>
+								
+							<input type="button" id="bt4" class="btn" value="4" onclick="myFunction(this)"/>
+
+							<input type="button" id="bt5" class="btn" value="5" onclick="myFunction(this)"/>
+
+							<input type="button" id="bt6" class="btn" value="6" onclick="myFunction(this)"/>
+
+							<input type="button" id="bt-" class="btn" value="-" onclick="myFunction(this)"/>
+
+							<input type="button" id="bt1" class="btn" value="1" onclick="myFunction(this)"/>
+
+							<input type="button" id="bt2" class="btn" value="2" onclick="myFunction(this)"/>
+
+							<input type="button" id="bt3" class="btn" value="3" onclick="myFunction(this)"/>
+
+							<input type="button" id="bt*" class="btn" value="*" onclick="myFunction(this)"/>
+
+							<input type="button" id="btAc" class="btn" value="AC" onclick="myFunction(this)"/>
+
+							<input type="button" id="bt0" class="btn" value="0" onclick="myFunction(this)"/>
+
+							<input type="button" id="bt=" class="btn" value="=" onclick="myFunction(this)"/>
+
+							<input type="button" id="bt/" class="btn" value="/" onclick="myFunction(this)"/>
+
+							<input type="button" id="bt." class="btn" value="." onclick="myFunction(this)"/>
+
+						</form>
+
+					</div>
+					
+				</div>
+
+
+	</div>
+
+	
+
+</body>
+</html>
