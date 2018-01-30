@@ -1,0 +1,41 @@
+body {
+	background-image: url('img5.jpg');
+	background-size: 100%;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+.bg {
+	margin-bottom: 50px;
+}
+
+.title {
+	border-bottom: 1px solid white;
+}
+
+.title h1{
+	text-align: center;
+	color: white;
+}
+
+.contatos {
+	height: 240px;
+	width: 49%;
+	background-color: #000;
+	opacity: 0.4;
+	color: #fff;
+	border-radius: 10px;
+	float: left;
+	border: 2px solid white;
+	margin: 1px;
+}
+
+.contactlist {
+	list-style: none;
+
+}
+
+.paragraph{
+	font-size: 18px;
+}
+

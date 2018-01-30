@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Agenda</title>
+	<meta charset="utf-8">
+	
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+	<div class="header" id="header">
+		<!-- IMAGEM DE FUNDO COM H1 -->
+		<div class="img">
+			<ul class="fly-in-text hidden">
+			<li>A</li>
+			<li>G</li>
+			<li>E</li>
+			<li>N</li>
+			<li>D</li>
+			<li>A</li>
+		</ul>
+		</div>
+
+	</div>
+
+	<div class="container">
+		
+	
+
+		<div class="agenda" id="agenda" >
+			<h1>Gerenciamento de Contatos</h1>
+			<div class="icones">
+				<!-- ICON CADASTRAR -->
+				<div class="add">
+					<a href="cadastrar.html" target="_blank"><img src="add2.png" class="img-add" alt="Cadastrar Contato"></a>
+					
+				</div>
+
+				<!-- ICON EDITAR -->
+				<div class="edit">
+					<a href="editarid.html" target="_blank"><img src="edit.png" class="img-edit" alt="Editar Contato">
+				</div>
+
+				<!-- ICON PESQUISAR -->
+				<div class="list">
+					<a href="listar.html" target="_blank"><img src="list.png" class="img-list" alt="Listar Contato"></a>
+				</div>
+
+				<!-- ICON REMOVER -->
+				<div class="del">
+					<a href="excluirid.html" target="_blank"><img src="del.png" class="img-del" alt="Deletar Contato">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src=https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js></script>
+	<script type="text/javascript" src="script.js"></script>
+
+	<script type="text/javascript">
+		$(function() {
+
+			setTimeout(function(){
+			$('.fly-in-text').removeClass('hidden');
+		}, 800);
+
+		})();
+	</script>
+
+</body>
+</html>

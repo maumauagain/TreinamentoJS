@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cadastrar Contatos</title>
+	<link rel="stylesheet" type="text/css" href="cad.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.css">
+</head>
+<body>
+
+	<div class="loginbox">
+		<img src="avatar.png" class="avatar">
+		<h1>Cadastrar Contato</h1>
+
+		<form name="meuform" id="meuform">
+			<p>Nome:</p>
+			<input type="text" id="nome" name="nome" required="required" placeholder="Digite seu nome">
+			<p>Email</p>
+			<input type="email" id="email" name="email" required="required" placeholder="Digite seu email">
+			<p>Sexo</p>
+			<input type="text" id="sexo" name="sexo" placeholder="Digite seu sexo">
+			<p>Endereco</p>
+			<input type="text" id="endereco" name="endereco" placeholder="Digite seu endereço">
+			<p>Observação</p>
+			<input type="text" name="obs" id="obs" placeholder="Digite sua Observação">
+
+			<button type="button" onclick="isFavorite()" id="btnfav" value="0" class="btnfav">
+	  			<span class="glyphicon glyphicon-star" aria-hidden="true"></span> Fav
+			</button>
+
+			<button type="button" onclick="isObs()" value="0" id="btnobs" class="btnobs">
+	  			<span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> OBS
+			</button>
+
+
+			<input type="submit" id="Cadastrar" name="Cadastrar" value="Cadastrar">
+		</form>
+		
+	</div>
+
+<script src=https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js></script>
+<script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>

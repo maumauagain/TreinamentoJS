@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Editar Contato</title>
+	<link rel="stylesheet" type="text/css" href="edit.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.css">
+</head>
+<body>
+
+	<div class="loginbox">
+		<img src="avatar.png" class="avatar">
+		<h1>Editar Contato</h1>
+
+		<form name="novoform" id="novoform">
+			<p>Nome:</p>
+			<input type="text" id="newnome" name="nome" required="required">
+			<p>Email</p>
+			<input type="email" id="newemail" name="email" required="required">
+			<p>Sexo</p>
+			<input type="text" id="newsexo" name="sexo">
+			<p>Endereco</p>
+			<input type="text" id="newendereco" name="endereco">
+			<p>Observação</p>
+			<input type="text" name="obs" id="newobs">
+
+			<button type="button" onclick="isFavorite()" id="btnfav" value="0" class="btnfav">
+	  			<span class="glyphicon glyphicon-star" aria-hidden="true"></span> Fav
+			</button>
+
+			<button type="button" onclick="isObs()" value="0" id="btnobs" class="btnobs">
+	  			<span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> OBS
+			</button>
+
+
+			<input type="submit" id="Salvar" name="Salvar" value="Salvar">
+		</form>
+		
+	</div>
+
+<script src=https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js></script>
+<script type="text/javascript" src="script.js"></script>
+
+
+</body>
+</html>
