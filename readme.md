@@ -1,3 +1,8 @@
 # Treinamento JS
+-----------------
 
-Treinamento Javascript com Marcos e Luiz!
+## Calculadora
+Objetivo da atividade foi criar uma calculadora sem usar as funções matemáticas para calcular.
+
+## Projeto Final 
+Objetivo da atividade foi criar uma agenda de contatos, utilizando uma api para fazer as requisições.
