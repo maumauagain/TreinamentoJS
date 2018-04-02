@@ -1,0 +1,61 @@
+body {
+	background-image: url('../imagens/bgEditarId.jpg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.container2 {
+	text-align: center;
+	height: 600px;
+	width: 600px;
+	margin: 0 auto;
+	background-color: black;
+	opacity: 0.5;
+}
+
+.container2 h1{
+	color: #fff;
+	margin-bottom: 10px;
+}
+
+.input, .btnSearch {
+	margin-top: 20px;
+}
+
+.input {
+	width: 70%;
+	border: none;
+	background-color: black;
+	border-bottom: 1px solid white;
+	color: white;
+	outline: none;
+	height: 40px;
+	font-size: 18px;
+}
+
+.btnSearch {
+	border: 1px solid white;
+	background-color: black;
+	color: white;
+	border-radius: 3px;
+	padding: 10px;
+}
+
+.secondContainer {
+	margin-top: 50px;
+}
+
+.title {
+	color: white;
+}
+
+.data-list {
+	border: 2px solid #ccc;
+	border-radius: 10px;
+	height: 15%;
+	list-style-type: none;
+	padding: 10px;
+	margin-bottom: 15px;
+	margin-left: 15px;
+	width: 100%;
+}
